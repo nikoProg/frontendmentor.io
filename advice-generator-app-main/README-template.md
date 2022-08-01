@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-https://github.com/nikoProg/frontendmentor.io/blob/main/advice-generator-app-main/Screenshot.png
+![Screenshot of the website](./Screenshot.png)
 
 ### Links
 
