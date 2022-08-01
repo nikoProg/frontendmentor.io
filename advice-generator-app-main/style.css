@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "Manrope";
+    src: url(Manrope/Manrope-VariableFont_wght.ttf);
+}
+body{
+    background-color: hsl(218, 23%, 16%);
+    font-family: "Manrope";
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 10%;
+}
+.advice-container{
+    /*background-color: hsl(217, 19%, 38%);*/
+    background-color: hsl(217, 19%, 24%);
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.advice-container > * {
+    padding: 1em;
+}
+
+.advice-number{
+    color: hsl(150, 100%, 66%);
+    letter-spacing: .4rem;
+}
+
+.advice-text{
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+}
+
+#btn{
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    border: unset;
+    padding: unset;
+    width: 50px;
+    height: 50px;
+    /*transition-property: all;
+    transition-timing-function: linear;
+    transition-delay: 250ms ;*/
+    position: relative;
+    bottom: -40px;
+}
+
+.svg-dice{
+    size: 1px;
+}
+
+/*the entire ::after pseudoelement is used to make a trick with the glowy button transition*/
+#btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em hsl(150, 100%, 66%);
+    opacity: 0;
+    background-color: none;
+    z-index: 0; 
+    transition: opacity 500ms linear;
+    border-radius: 50%;
+  }
+/*#btn:hover,
+#btn:focus {
+  color: hsl(150, 100%, 66%);
+}*/
+
+#btn:hover::before,
+#btn:focus::before {
+  opacity: 1;
+}
+#btn:hover::after,
+#btn:focus::after {
+  opacity: 1;
+}
+@media only screen and (max-width: 768px) {
+    #divider-desktop {
+        display: none;
+    }
+    #divider-mobile {
+        display: unset;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #divider-mobile {
+        display: none;
+    }
+
+    #divider-desktop {
+        display: unset;
+    }
+
+    .advice-container {
+        width: calc(100% / 1.25 - 15px);
+        max-width: calc(1444px / 3);
+        margin: 5px;
+    }
+}

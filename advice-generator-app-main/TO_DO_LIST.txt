@@ -1,0 +1,13 @@
+-write some HTML
+-write mobile CSS
+-write desktop CSS
+-connect with the API
+
+-SOMETHING ELSE, POLISH
+
+-edit the README-template.md file, I guess it shows on the frontendio website or in github? I'm not sure!
+
+
+- FIX THE SVG! THERE ARE 2 COLORS IN THIS SVG BUT THE IMAGE SHOWS 1, THE GRAY-WHITE ONE
+
+

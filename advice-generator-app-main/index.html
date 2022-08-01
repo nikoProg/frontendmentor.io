@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; position: fixed; bottom: 3%; color:wheat; }
+    .attribution a { color: hsl(176, 27%, 51%); }
+  </style>
+</head>
+<body>
+
+  <div class="advice-container">
+    <div class="advice-number">ADVICE #<!-- Advice ID goes here -->0</div>
+    <div class="advice-text">"<!-- Advice text goes here -->Click the dice to get random advice!  "</div>
+    <img id="divider-mobile" src="images/pattern-divider-mobile.svg">
+    <img id="divider-desktop" src="images/pattern-divider-desktop.svg">
+    <div>
+      <button id="btn" onclick="getAdvice()">
+        <img class="svg-dice" src="images/icon-dice.svg">
+      </button>
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/nikoProg">nikoProg</a>.
+  </div>
+  <script src="apiScript.js"></script>
+</body>
+</html>
