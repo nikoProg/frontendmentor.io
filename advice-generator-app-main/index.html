@@ -16,23 +16,23 @@
 </head>
 <body>
 
-  <div class="advice-container">
+  <main class="advice-container">
     <div class="advice-number">ADVICE #<!-- Advice ID goes here -->0</div>
     <div class="advice-text">"<!-- Advice text goes here -->Click the dice to get random advice!  "</div>
-    <img id="divider-mobile" src="images/pattern-divider-mobile.svg">
-    <img id="divider-desktop" src="images/pattern-divider-desktop.svg">
+    <img id="divider-mobile" aria-label="" src="images/pattern-divider-mobile.svg">
+    <img id="divider-desktop" aria-label="" src="images/pattern-divider-desktop.svg">
     <div>
       <button id="btn" onclick="getAdvice()">
-        <img class="svg-dice" src="images/icon-dice.svg">
+        <img class="svg-dice" aria-label="dice" src="images/icon-dice.svg">
       </button>
     </div>
-  </div>
+  </main>
 
 
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.frontendmentor.io/profile/nikoProg">nikoProg</a>.
-  </div>
+  </footer>
   <script src="apiScript.js"></script>
 </body>
 </html>
