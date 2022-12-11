@@ -52,6 +52,7 @@ div > .card:nth-of-type(4) {
 
 .cards {
   display: flex;
+  flex-direction: column;
 }
 .card {
   text-align: left;
@@ -107,5 +108,7 @@ div > .card:nth-of-type(4) {
     width: 350px;
     height: 250px;
   }
-  
+  .cards {
+    flex-direction: unset;
+  }
 }
