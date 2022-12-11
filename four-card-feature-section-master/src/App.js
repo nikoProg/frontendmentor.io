@@ -6,10 +6,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <h1 style={{ fontWeight: "unset" }}>Reliable, efficient delivery</h1>
-      <h1>Powered by Technology</h1>
-      <h4 style={{ fontWeight: "unset" }}>Our Artificial Intelligence powered tools use millions of project data points
-        to ensure that your project is successful</h4>
+        <h1 style={{ fontWeight: "unset" }}>Reliable, efficient delivery</h1>
+        <h1>Powered by Technology</h1>
+        <h4 style={{ fontWeight: "unset" }}>Our Artificial Intelligence powered tools use millions of project data points
+          to ensure that your project is successful</h4>
       </header>
       <div className='cards'>
         <div className='column-single'>
@@ -37,6 +37,12 @@ function App() {
           </div>
         </div>
       </div>
+      <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="#">Your Name Here</a>.
+        </p>
+      </footer>
     </div>
   );
 }
