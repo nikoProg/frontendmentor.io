@@ -1,0 +1,111 @@
+@import url('https://fonts.google.com/specimen/Poppins@200;400;600&display=swap');
+*{
+  --color-background: hsl(0, 0%, 98%);
+  --color-text: hsl(234, 12%, 34%);
+  --font-family: 'Poppins', sans-serif;
+}
+
+.root {
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 24px;
+  height: fit-content;
+}
+
+.App {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+
+h1, h2 {
+  margin: unset;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+/* different styles for each card border: 
+DOES NOT WORK WHEN I CHANGED THE HTML TO FIT THE 1440px LAYOUT*/
+/* div > .card:nth-of-type(1) {
+  border-color: hsl(180, 62%, 55%);
+}
+div > .card:nth-of-type(2) {
+  border-color: hsl(0, 78%, 62%);
+}
+div > .card:nth-of-type(3) {
+  border-color: hsl(34, 97%, 64%);
+}
+div > .card:nth-of-type(4) {
+  border-color: hsl(212, 86%, 64%);
+} */
+
+.cards {
+  display: flex;
+}
+.card {
+  text-align: left;
+  border-radius: 5%;
+  border: 5px solid black;
+  border-style: solid none none none;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 30vh;
+  background-color: white;
+  margin-bottom: 35px;
+  padding: 25px;
+  box-shadow: 0px 5px 20px 2px;
+}
+
+.svg-icon {
+  position: relative;
+  left: 80%;
+  top: 30%;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 450px;
+}
+
+.column-single {
+  margin: 0;
+  padding: 0;
+  width: -webkit-fill-available;
+}
+.column-double {
+  margin: 0;
+  padding: 0;
+  width: -webkit-fill-available;
+}
+@media only screen and (min-width: 1440px) {
+  .column-single {
+    margin: 10% 0 10% 0;
+    padding: 50px 20px;
+    width: -webkit-fill-available;
+  }
+  .column-double {
+    margin: 0;
+    padding: 0;
+    width: -webkit-fill-available;
+  }
+  .card {
+    width: 350px;
+    height: 250px;
+  }
+  
+}
