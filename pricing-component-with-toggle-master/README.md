@@ -43,7 +43,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/nikoProg/frontendmentor.io/tree/main/pricing-component-with-toggle-master)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Netlify site pricing component](https://pricing-component-with-toggle-nikopro.netlify.app/)
 
 ## My process
 
